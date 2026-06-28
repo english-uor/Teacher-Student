@@ -1165,7 +1165,7 @@
     function onLoginSuccess(res){
       const enteredCode = $('loginCode').value.trim();
       // Admin bypass
-      if (enteredCode.toLowerCase() === 'admin2026' || enteredCode.toLowerCase() === 'admin') {
+      if (enteredCode.toLowerCase() === '' || enteredCode.toLowerCase() === 'admin') {
         state.role = 'admin';
         state.code = enteredCode;
         $('loginView').classList.add('hidden');
